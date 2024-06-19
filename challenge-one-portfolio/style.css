@@ -1,0 +1,513 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(255, 224, 230);
+    font-family: 'Nunito';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+li, ul, ol {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/* Estilos para a navegação */
+
+.menu header{
+    padding: 0.5rem 0.5rem;
+    color: pink;
+    background-color: #000;
+    text-align: center;
+}
+
+/*Sessão Title*/
+.title__div{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.title__profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Seção Network */
+
+.network {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 1rem;
+    background-color: pink;
+}
+.title__network{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    text-align: center;
+}
+
+.title__network__item a {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(206, 134, 134);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    display: flex; 
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title__network__item a:hover {
+    background-color: rgb(129, 161, 255);
+    color: #ffffff;
+}
+
+/*Sessão Menu*/
+.menu nav {
+    padding: 0.5rem 0.5rem;
+}
+
+.menu{
+    background-color: pink;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0rem;
+}
+
+.menu__list {
+    display: flex;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* Espaçamento entre as skills */
+}
+
+.menu__list__item a {
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid rgb(206, 134, 134);
+    transition: background-color 0.3s, color 0.3s;
+    color: #000;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu__list__item a:hover {
+    background-color: rgb(129, 161, 255);
+    color: #ffffff;
+}
+
+/*Sessão About*/
+.title {
+    padding: 1rem;
+    text-align: center;
+}
+.title__div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.title__profile {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.title__network {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+    display: flex;
+}
+
+.about__title {
+    text-align: center;
+}
+
+.about{
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: justify;
+}
+.about__paragraph {
+    max-width: 600px; /* Define a largura máxima do parágrafo */
+    margin: 0 auto;   /* Centraliza o parágrafo dentro do container */
+}
+
+/*Sessão Skills*/
+.skills {
+    padding: 1rem;
+    text-align: center;
+    background-color: pink;
+}
+
+.skills__title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skills__line {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+    justify-content: center; 
+    gap: 1rem; /* Espaçamento entre as skills */
+}
+
+.skills__box {
+    border: 1px solid rgb(182, 120, 120);
+    border-radius: 5px;
+    padding: 1rem;
+    width: auto; /* Largura fixa para as caixas de skills */
+    text-align: center;
+}
+
+.skills__img img {
+    width: 100%;
+    height: auto;
+}
+
+.skills__name {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/*Sessão Hobbies*/
+
+.hobbies {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobbies__title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+    justify-content: center; 
+    gap: 1rem; /* Espaçamento entre as skills */
+}
+.hobbies__box {
+    border: 1px solid rgb(182, 120, 120);
+    border-radius: 5px;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 90px;
+    height: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.hobbies__img img {
+    width: 100%;
+    height: auto;
+}
+
+.hobbies__name {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Experiência Acadêmica*/
+
+.academic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: pink;
+}
+.academic__box {
+    border: 1px solid rgb(182, 120, 120);
+    border-radius: 5px;
+    padding: 1px;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.academic__img img {
+    width: 100px; 
+    height: 100%; 
+}
+
+.academic__name {
+    margin-top: 0.5rem;
+}
+
+.academic__description {
+    margin-top: 0.5rem;
+    text-align: justify; /* Alinha o texto para uma leitura mais confortável */
+}
+
+/* Projetos*/
+
+.projetos__title {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Repositório */
+
+.repositorio__container{
+    padding: 1rem;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.repositorio {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    text-align: center;
+}
+.respositorio__item a {
+    font-size: 1.4rem;
+    padding: 0.4rem;
+    border: 2px solid rgb(206, 134, 134);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    display: flex; 
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.repositorio__item a:hover {
+    background-color: rgb(129, 161, 255);
+    color: #ffffff;
+}
+
+.projetos {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projetos__line {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+    justify-content: center; 
+    gap: 1rem; /* Espaçamento entre as skills */
+    width: 100%;
+}
+.projetos__box {
+    border: 1px solid rgb(182, 120, 120);
+    border-radius: 5px;
+    width: 210px; /*Largura fixa para as caixas de skills */ 
+    height: auto;
+    text-align: center;
+    margin: 1rem; /* Adiciona espaçamento entre as caixas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projetos__img img {
+    width: 100%;
+    height: auto;
+}
+
+.projetos__name {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/*Contato*/
+.formcontato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    background-color: pink;
+}
+.formcontato__contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: column;
+}
+
+.formcontato__text {
+    max-width: 600px; /* Define a largura máxima do parágrafo */
+    margin: 0 auto;   /* Centraliza o parágrafo dentro do container */
+    padding: 1rem;
+}
+.formcontato__form {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formcontato__botao {
+    padding: 10px;
+    background-color: palevioletred;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid rgb(206, 134, 134);
+    border-radius: 5px;
+}
+
+.formcontato__botao:hover {
+    background-color: rgb(129, 161, 255);
+}
+/*footeer*/
+.footer{
+    padding: 0;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    color: pink;
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/* Tablet */
+@media (min-width: 768px) {
+    /* Menu */
+    .menu nav {
+        padding: 1rem;
+    }
+
+    /* Title */
+    .title {
+        padding: 3rem;
+    }
+
+    /* Skills */
+    .skills__line {
+        gap: 2rem; /* Aumenta o espaçamento entre as skills */
+    }
+
+    /* Hobbies */
+    .hobbies__line {
+        gap: 2rem; /* Aumenta o espaçamento entre os hobbies */
+    }
+
+    /* Experiências acadêmicas */
+    .academic__box {
+        width: 400px; /* Aumenta a largura das caixas acadêmicas */
+    }
+
+    /* Experiência profissional (se existir) */
+    /* Adicione as regras necessárias */
+
+}
+
+/* Mobile */
+@media (min-width: 425px) {
+    /* Menu */
+    .menu {
+        padding: 0rem;
+    }
+
+    /* Título */
+    .title__div {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Sessão sobre (se existir) */
+    /* Adicione as regras necessárias */
+
+    /* Skills */
+    .skills__box {
+        width: 80px; /* Reduz a largura das caixas de skills */
+    }
+
+    /* Hobbies */
+    .hobbies__box {
+        width: 80px; /* Reduz a largura das caixas de hobbies */
+        height: 150px; /* Ajusta a altura das caixas de hobbies */
+    }
+
+    /* Formação Acadêmica (se existir) */
+    /* Adicione as regras necessárias */
+
+    /* Experiência Profissional (se existir) */
+    /* Adicione as regras necessárias */
+
+    /* Contato */
+    .formcontato__form {
+        max-width: 300px; /* Limita a largura do formulário de contato */
+    }
+
+    /* Footer */
+    .footer {
+        padding: 0.5rem;
+    }
+}
